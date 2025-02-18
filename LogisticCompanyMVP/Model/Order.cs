@@ -12,6 +12,7 @@ namespace LogisticCompanyMVP.Model
         public string Address { get; set; }
         public string Status { get; set; }
         public string Description { get; set; }
+        public string Recipient { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ArriveDate { get; set; }
     }

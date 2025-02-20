@@ -12,16 +12,29 @@ namespace LogisticCompanyMVP.ViewModel
     public class MainWindowVM:BaseVM
     {
 		private DBManager db;
-		private User _user;
+		private string _username;
 
-		public User User
+		public string Username
 		{
-			get { return _user; }
-			set {
-				_user = value;
+			get { return _username; }
+			set { 
+				_username = value;
 				Signal();
 			}
 		}
+
+		private string _password;
+
+		public string Password
+		{
+			get { return _password; }
+			set { 
+				_password = value;
+				Signal();
+			}
+		}
+
+
 
 		public CommandVM SignIn { get; set; }
 
